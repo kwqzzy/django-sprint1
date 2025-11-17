@@ -44,8 +44,8 @@ posts = [
 ]
 
 
-ef index(request):
-    context = {'posts': posts[::-1]} 
+def index(request):
+    context = {'posts': posts[::-1]}
     return render(request, 'blog/index.html', context)
 
 
