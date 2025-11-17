@@ -45,12 +45,13 @@ posts = [
 
 
 def index(request):
-    context = {'posts': posts}
+    reversed_posts = list(reversed(posts))
+    context = {'posts': reversed_posts}
     return render(request, 'blog/index.html', context)
 
 
-def post_detail(request, post_id):
-    post = posts[post_id]
+def post_detail(request, id):
+    post = posts[id]
     context = {'post': post}
     return render(request, 'blog/detail.html', context)
 
