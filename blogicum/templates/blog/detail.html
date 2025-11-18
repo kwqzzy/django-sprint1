@@ -3,9 +3,5 @@
 {% block title %}{{ post.title }}{% endblock %}
 
 {% block content %}
-  {% include 'blog/includes/post_card.html' %}
-  
-  <div class="post-full-text">
-    {{ post.text|linebreaks }}
-  </div>
+  {% include 'blog/includes/post_detail.html' %}
 {% endblock %}
