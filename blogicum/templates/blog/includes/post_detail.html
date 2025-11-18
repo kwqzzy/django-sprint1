@@ -1,9 +1,0 @@
-<article>
-  <ul>
-    <li>Место: {{ post.location }}</li>
-    <li>Дата: {{ post.date }}</li>
-    <li>Категория: <a href="{% url 'blog:category_posts' post.category %}">{{ post.category }}</a></li>
-  </ul>          
-  <p>{{ post.text|linebreaks }}</p>  {# Полный текст с переносами строк #}
-  {# Убрана ссылка "Читать полный текст" - она не нужна на детальной странице #}
-</article>

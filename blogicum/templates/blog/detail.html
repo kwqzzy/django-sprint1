@@ -3,5 +3,5 @@
 {% block title %}{{ post.title }}{% endblock %}
 
 {% block content %}
-  {% include 'blog/includes/post_detail.html' %}
+  {% include "blog/includes/post.html" with is_detail_view=True %}
 {% endblock %}
